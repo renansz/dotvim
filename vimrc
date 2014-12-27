@@ -88,8 +88,9 @@
     set rtp+=~/.vim
   endif
   set rtp+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'
+  call neobundle#end()
 "}}}
 
 " functions {{{
